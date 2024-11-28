@@ -11,7 +11,7 @@ This project combines **Next.js 14**, **TailwindCSS**, and **TypeScript** to cre
 
 ![Screenshot (472)](https://github.com/user-attachments/assets/f30b329f-c196-4fa4-9238-d9f9cac46644)
 
-# Blog page 
+## Blog page 
 
 User should login to see blog page.
 
@@ -27,6 +27,7 @@ User should login to see blog page.
 
 - **Modern Frontend**: Built with Next.js 14 and styled with TailwindCSS.
 - **Authentication**: User login and sign-up functionality implemented with NextAuth and MongoDB.
+  also use next-auth
 - **Password Security**: Uses **bcrypt** for secure password hashing.
 - **Dynamic Blog Pages**: Blogs are fetched from the [dummyjson](https://dummyjson.com/) API and rendered dynamically.
 - **TypeScript**: Ensures type safety and scalability.
@@ -61,15 +62,32 @@ npm install
 Set Up Environment Variables
 Create a .env.local file with the following variables:
 
-# NextAuth Configuration
+### NextAuth Configuration
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your-secret-key
 
-# MongoDB Configuration
+### MongoDB Configuration
 MONGODB_URI=your-mongodb-uri
 MONGODB_DB=your-database-name
 Replace placeholders with your actual credentials.
 Sure! Below is the full content in a Markdown file format, as you requested:
+
+## NextAuth Integration
+
+### What is NextAuth?
+
+[NextAuth](https://next-auth.js.org/) is a complete authentication solution for **Next.js** applications. It allows you to add secure authentication to your app, including login functionality via multiple providers (Google, GitHub, etc.) or custom username/password authentication, as in this project.
+
+In this project, **NextAuth** is used to manage the authentication process, including the login and sign-up features. It integrates seamlessly with **MongoDB** to store user credentials.
+
+### Installing NextAuth
+
+NextAuth is installed as a dependency when setting up the project:
+
+```bash
+npm install next-auth
+
+
 
 # Run Development Server
 
@@ -77,7 +95,7 @@ Sure! Below is the full content in a Markdown file format, as you requested:
 npm run dev
 The app will be available at http://localhost:3000.
 ```
-# Folder Structure
+## Folder Structure
 ```markdown
 ├── app
 │   ├── api
@@ -112,14 +130,14 @@ The app will be available at http://localhost:3000.
 └── tailwind.config.js            # TailwindCSS configuration
 ```
 
-# Utilities Overview
+## Utilities Overview
 SessionProvider
 Encapsulates the app with session context from NextAuth.
 Simplifies access to the session state throughout the app.
 db.js
 Establishes a connection to the MongoDB database.
 
-# Password Hashing with Bcrypt
+## Password Hashing with Bcrypt
 How Bcrypt Is Used
 Sign-Up: Passwords are hashed using bcrypt before storing them in MongoDB.
 Login: The hashed password is compared using bcrypt to ensure security.
@@ -138,10 +156,10 @@ const comparePassword = async (password: string, hashedPassword: string): Promis
 };
 ```
 
-# Notes
+## Notes
 Login to Access Blog Content: To view the list of blog posts, users must log in first. Once authenticated, they will have access to the dynamic blog pages.
 
-# Integration
+## Integration
 Signup API: Hashes the password before storing it.
 Login API: Validates the hashed password using bcrypt’s comparison function.
 
