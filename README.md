@@ -122,6 +122,9 @@ const comparePassword = async (password: string, hashedPassword: string): Promis
 };
 ```
 
+# Notes
+Login to Access Blog Content: To view the list of blog posts, users must log in first. Once authenticated, they will have access to the dynamic blog pages.
+
 # Integration
 Signup API: Hashes the password before storing it.
 Login API: Validates the hashed password using bcrypt’s comparison function.
