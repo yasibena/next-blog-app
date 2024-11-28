@@ -1,6 +1,6 @@
 # Next.js TailwindCSS TypeScript Blog App with Authentication
 
-This project combines **Next.js 14**, **TailwindCSS**, and **TypeScript** to create a robust blog application. It features **NextAuth** for authentication, **MongoDB** for user management, and **bcrypt** for secure password hashing. Blog data is dynamically fetched from the [dummyjson](https://dummyjson.com/) API, and reusable components streamline the user interface.
+This project combines **Next.js 14**, **TailwindCSS**, and **TypeScript** to create a responsive robust blog application. It features **NextAuth** for authentication, **MongoDB** for user management, and **bcrypt** for secure password hashing. Blog data is dynamically fetched from the [dummyjson](https://dummyjson.com/) API, and reusable components streamline the user interface.
 
 
 ## Home page
