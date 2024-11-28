@@ -2,6 +2,24 @@
 
 This project combines **Next.js 14**, **TailwindCSS**, and **TypeScript** to create a robust blog application. It features **NextAuth** for authentication, **MongoDB** for user management, and **bcrypt** for secure password hashing. Blog data is dynamically fetched from the [dummyjson](https://dummyjson.com/) API, and reusable components streamline the user interface.
 
+
+## Home page
+
+![Screenshot (470)](https://github.com/user-attachments/assets/4ece5d7d-046a-45be-acd5-8884f93d712c)
+
+## Login page 
+
+![Screenshot (472)](https://github.com/user-attachments/assets/f30b329f-c196-4fa4-9238-d9f9cac46644)
+
+# Blog page 
+
+User should login to see blog page.
+![Screenshot (473)](https://github.com/user-attachments/assets/c0099a43-a69a-4876-9db7-48953f71755c)
+
+## Each blog post
+![Screenshot (474)](https://github.com/user-attachments/assets/97a27df3-2888-45df-9a0d-a1b6e6de1d04)
+
+
 ---
 
 ## Features
