@@ -116,8 +116,10 @@ const hashPassword = async (password: string): Promise<string> => {
 const comparePassword = async (password: string, hashedPassword: string): Promise<boolean> => {
   return await bcrypt.compare(password, hashedPassword);
 };
-Integration
+```
+
+# Integration
 Signup API: Hashes the password before storing it.
 Login API: Validates the hashed password using bcrypt’s comparison function.
-```
+
 
