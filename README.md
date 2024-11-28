@@ -60,8 +60,8 @@ Copy code
 ```bash
 npm run dev
 The app will be available at http://localhost:3000.
-
-Folder Structure
+```
+# Folder Structure
 plaintext
 Copy code
 .
@@ -91,41 +91,21 @@ Copy code
 ├── images  # Static assets (e.g., icons, images)
 ├── styles  # Global and TailwindCSS styles
 └── tailwind.config.js  # TailwindCSS configuration
-Utilities Overview
+
+# Utilities Overview
 SessionProvider
 Encapsulates the app with session context from NextAuth.
 Simplifies access to the session state throughout the app.
 db.js
 Establishes a connection to the MongoDB database.
 
-Example implementation:
-
-js
-Copy code
-import { MongoClient } from 'mongodb';
-
-const uri = process.env.MONGODB_URI;
-const options = {};
-
-let client;
-let clientPromise;
-
-if (!process.env.MONGODB_URI) {
-  throw new Error('Please add your MongoDB URI to .env.local');
-}
-
-client = new MongoClient(uri, options);
-clientPromise = client.connect();
-
-export default clientPromise;
-Password Hashing with Bcrypt
+# Password Hashing with Bcrypt
 How Bcrypt Is Used
 Sign-Up: Passwords are hashed using bcrypt before storing them in MongoDB.
 Login: The hashed password is compared using bcrypt to ensure security.
 Example Implementation:
 
-ts
-Copy code
+```
 import bcrypt from 'bcrypt';
 
 const hashPassword = async (password: string): Promise<string> => {
@@ -139,4 +119,5 @@ const comparePassword = async (password: string, hashedPassword: string): Promis
 Integration
 Signup API: Hashes the password before storing it.
 Login API: Validates the hashed password using bcrypt’s comparison function.
+```
 
