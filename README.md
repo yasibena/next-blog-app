@@ -61,8 +61,6 @@ npm install
 Set Up Environment Variables
 Create a .env.local file with the following variables:
 
-env
-Copy code
 # NextAuth Configuration
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your-secret-key
@@ -73,8 +71,6 @@ MONGODB_DB=your-database-name
 Replace placeholders with your actual credentials.
 Sure! Below is the full content in a Markdown file format, as you requested:
 
-markdown
-Copy code
 # Run Development Server
 
 ```bash
