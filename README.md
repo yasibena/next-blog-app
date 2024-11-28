@@ -62,6 +62,7 @@ npm run dev
 The app will be available at http://localhost:3000.
 ```
 # Folder Structure
+```markdown
 ├── app
 │   ├── api
 │   │   ├── auth
@@ -93,7 +94,7 @@ The app will be available at http://localhost:3000.
 ├── styles                        # Global and TailwindCSS styles
 │
 └── tailwind.config.js            # TailwindCSS configuration
-
+```
 
 # Utilities Overview
 SessionProvider
