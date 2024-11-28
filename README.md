@@ -51,44 +51,46 @@ NEXTAUTH_SECRET=your-secret-key
 MONGODB_URI=your-mongodb-uri
 MONGODB_DB=your-database-name
 Replace placeholders with your actual credentials.
+Sure! Below is the full content in a Markdown file format, as you requested:
 
-Run Development Server
-
-bash
+markdown
 Copy code
+# Run Development Server
+
+```bash
 npm run dev
 The app will be available at http://localhost:3000.
 
 Folder Structure
-less
+plaintext
 Copy code
 .
 ├── app
 │   ├── api
 │   │   ├── auth
-│   │   │   └── [...nextauth].ts   // NextAuth configuration
-│   │   ├── blog                   // Blog-related API routes
-│   │   └── signup                 // User sign-up API
+│   │   │   └── [...nextauth].ts  # NextAuth configuration
+│   │   ├── blog  # Blog-related API routes
+│   │   └── signup  # User sign-up API
 │   ├── blog
-│   │   └── [slug]                 // Dynamic routing for individual blogs
-│   ├── contact                    // Contact page
-│   ├── fonts                      // Font configurations
-│   ├── login                      // Login page
-│   ├── signup                     // Sign-up page
-│   ├── models                     // MongoDB models (e.g., User, Blog)
-│   └── utils                      // Utility functions
+│   │   └── [slug]  # Dynamic routing for individual blogs
+│   ├── contact  # Contact page
+│   ├── fonts  # Font configurations
+│   ├── login  # Login page
+│   ├── signup  # Sign-up page
+│   ├── models  # MongoDB models (e.g., User, Blog)
+│   └── utils  # Utility functions
 ├── components
-│   ├── LoginForm.tsx              // Login form component
-│   ├── Navbar.tsx                 // Navbar component
-│   ├── PostLists.tsx              // Component to list all posts
-│   ├── SignupForm.tsx             // Signup form component
-│   └── SinglePost.tsx             // Component for displaying a single blog post
+│   ├── LoginForm.tsx  # Login form component
+│   ├── Navbar.tsx  # Navbar component
+│   ├── PostLists.tsx  # Component to list all posts
+│   ├── SignupForm.tsx  # Signup form component
+│   └── SinglePost.tsx  # Component for displaying a single blog post
 ├── utils
-│   ├── SessionProvider.tsx        // Simplifies NextAuth session management
-│   └── db.js                      // MongoDB connection logic
-├── images                         // Static assets (e.g., icons, images)
-├── styles                         // Global and TailwindCSS styles
-└── tailwind.config.js             // TailwindCSS configuration
+│   ├── SessionProvider.tsx  # Simplifies NextAuth session management
+│   └── db.js  # MongoDB connection logic
+├── images  # Static assets (e.g., icons, images)
+├── styles  # Global and TailwindCSS styles
+└── tailwind.config.js  # TailwindCSS configuration
 Utilities Overview
 SessionProvider
 Encapsulates the app with session context from NextAuth.
@@ -120,7 +122,8 @@ Password Hashing with Bcrypt
 How Bcrypt Is Used
 Sign-Up: Passwords are hashed using bcrypt before storing them in MongoDB.
 Login: The hashed password is compared using bcrypt to ensure security.
-Example Implementation
+Example Implementation:
+
 ts
 Copy code
 import bcrypt from 'bcrypt';
@@ -136,3 +139,4 @@ const comparePassword = async (password: string, hashedPassword: string): Promis
 Integration
 Signup API: Hashes the password before storing it.
 Login API: Validates the hashed password using bcrypt’s comparison function.
+
