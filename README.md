@@ -64,7 +64,7 @@ The app will be available at http://localhost:3000.
 # Folder Structure
 plaintext
 Copy code
-.
+`
 ├── app
 │   ├── api
 │   │   ├── auth
@@ -91,6 +91,7 @@ Copy code
 ├── images  # Static assets (e.g., icons, images)
 ├── styles  # Global and TailwindCSS styles
 └── tailwind.config.js  # TailwindCSS configuration
+`
 
 # Utilities Overview
 SessionProvider
