@@ -62,7 +62,6 @@ npm run dev
 The app will be available at http://localhost:3000.
 ```
 # Folder Structure
-`
 ├── app
 │   ├── api
 │   │   ├── auth
@@ -77,19 +76,25 @@ The app will be available at http://localhost:3000.
 │   ├── signup  # Sign-up page
 │   ├── models  # MongoDB models (e.g., User, Blog)
 │   └── utils  # Utility functions
+│   
 ├── components
 │   ├── LoginForm.tsx  # Login form component
 │   ├── Navbar.tsx  # Navbar component
 │   ├── PostLists.tsx  # Component to list all posts
 │   ├── SignupForm.tsx  # Signup form component
 │   └── SinglePost.tsx  # Component for displaying a single blog post
+│   
 ├── utils
 │   ├── SessionProvider.tsx  # Simplifies NextAuth session management
 │   └── db.js  # MongoDB connection logic
+│   
 ├── images  # Static assets (e.g., icons, images)
+│   
 ├── styles  # Global and TailwindCSS styles
+│   
 └── tailwind.config.js  # TailwindCSS configuration
-`
+
+
 
 # Utilities Overview
 SessionProvider
