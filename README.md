@@ -52,6 +52,7 @@ User should login to see blog page.
    ```bash
    git clone https://github.com/your-repo.git
    cd your-repo
+   ```
 Install Dependencies
 
 bash
