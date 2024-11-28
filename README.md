@@ -14,6 +14,7 @@ This project combines **Next.js 14**, **TailwindCSS**, and **TypeScript** to cre
 # Blog page 
 
 User should login to see blog page.
+
 ![Screenshot (473)](https://github.com/user-attachments/assets/c0099a43-a69a-4876-9db7-48953f71755c)
 
 ## Each blog post
