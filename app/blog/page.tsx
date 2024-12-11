@@ -26,6 +26,7 @@ export default async function blog() {
 
   return (
     <div>
+      <p>abc</p>
       <PostList posts={posts} />
     </div>
   )
